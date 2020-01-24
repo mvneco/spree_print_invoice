@@ -1,6 +1,6 @@
 Deface::Override.new(
   virtual_path:  'spree/layouts/admin',
-  insert_after:  'erb[loud]:contains("end")',
+  insert_bottom: '[data-hook="admin_tabs"] > nav',
   partial:       'spree/admin/shared/menu/documents_tab',
   name:          'documents_tab'
 )
