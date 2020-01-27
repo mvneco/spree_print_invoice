@@ -5,7 +5,8 @@
           link_to_with_icon 'file',
             Spree.t(:documents, scope: :print_invoice),
             spree.admin_order_bookkeeping_documents_path(@order),
-            title: title
+            title: title,
+            class: 'nav-link'
         %>
       </li>
   <% end %>
