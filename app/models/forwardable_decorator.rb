@@ -10,6 +10,7 @@ module ForwardableDecorator
     self.class_variable_set(:@@already_prepended, true)
 
     self.remove_method :delegate
+    self.remove_method :instance_delegate
   end
 
 end
