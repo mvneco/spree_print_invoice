@@ -9,8 +9,8 @@ module ForwardableDecorator
     return if self.class_variable_get(:@@already_prepended)
     self.class_variable_set(:@@already_prepended, true)
 
-    self.remove_method :delegate
-    self.remove_method :instance_delegate
+    base.remove_method :delegate
+    base.remove_method :instance_delegate
   end
 
 end
