@@ -3,5 +3,6 @@ Deface::Override.new(
   name:          'print_invoice_admin_configurations_menu',
   insert_bottom: '[data-hook="admin_configurations_sidebar_menu"]',
   text:          '<%= configurations_sidebar_menu_item Spree.t(:settings, scope: :print_invoice),
-                      spree.edit_admin_print_invoice_settings_path %>'
+                      spree.edit_admin_print_invoice_settings_path %>',
+  original:      'a172190dded672616531749986c69e42d96af7d0'
 )
